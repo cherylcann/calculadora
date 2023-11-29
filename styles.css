@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #231f25;
+    text-align: center;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.calculadora {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+    width: 470px;
+    height: 505px;
+    margin: 0 15px;
+    /* padding: 30px 20px; */
+    padding: 30px 20px 40px 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pantalla {
+    overflow: hidden;
+    background-color: white;
+    height: 20%;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: rgb(69, 69, 69);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 15px 18px 0px 15px;
+}
+
+.pantalla p {
+    height: 70px;
+    font-size: 45px;
+    cursor: default;
+}
+
+.botones {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botones button {
+    font-size: 25px;
+    /* width: 100px; */
+    height: 56px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    font-family: arial, sans-serif;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    border-width: 0px;
+    transition: 0.5s;
+}
+
+.delete {
+    /* padding: 0px 50px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.delete button {
+    font-size: 20px;
+    width: 49%;
+    /* width: 210px; */
+    height: 56px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    background-color: #cecece;
+    border-radius: 5px;
+    /* padding: 20px 50px; */
+    border-width: 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* background-color: #acacac; */
+.botones button:hover, .delete button:hover {
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1%) translateX(-1%);
+    /* background-color: #a3a3a3; */
+    transition: 0.3s;
+}
+
+.botones button:active, .delete button:active {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    transform: translateY(2%) translateX(2%);
+    transition: 0.1s;
+}

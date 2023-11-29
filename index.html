@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Cheryl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="particles-js">
+    </div>
+    <div class="calculadora" >
+        <div class="pantalla">
+            <p id="calc">0</p>
+        </div>
+        <div class="delete">
+            <button onclick="calculator('cls', this)">Clear</button>
+            <button onclick="calculator('delete', this)">Delete</button>
+        </div>
+        <div class="botones">
+            <button onclick="calculator('7', this)">7</button>
+            <button onclick="calculator('8', this)">8</button>
+            <button onclick="calculator('9', this)">9</button>
+            <button onclick="calculator('÷', this)">÷</button>
+            <button onclick="calculator('4', this)">4</button>
+            <button onclick="calculator('5', this)">5</button>
+            <button onclick="calculator('6', this)">6</button>
+            <button onclick="calculator('x', this)">x</button>
+            <button onclick="calculator('1', this)">1</button>
+            <button onclick="calculator('2', this)">2</button>
+            <button onclick="calculator('3', this)">3</button>
+            <button onclick="calculator('-', this)">-</button>
+            <button onclick="calculator('0', this)">0</button>
+            <button onclick="calculator('.', this)">.</button>
+            <button onclick="calculator('result', this)">=</button>
+            <button onclick="calculator('+', this)">+</button>
+        </div>
+    </div>
+
+    <!-- calculadora -->
+    <script src="javascript.js"></script>
+
+    <!-- particles js -->
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
