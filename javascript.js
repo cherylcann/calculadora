@@ -24,7 +24,9 @@ function calculator(type, element) {
             console.log(err);
             return calc.innerText = "Error :("
         }
-    } else if (["+", "x", "-", "÷", "."].includes(ultimaLetra) && ["+", "x", "-", "÷", "."].includes(type)) return;
+    } else if(type === "." && text === "0"){
+        return calc.innerText = "0.";
+    }else if (["+", "x", "-", "÷", "."].includes(ultimaLetra) && ["+", "x", "-", "÷", "."].includes(type)) return;
 
     if (text === "0" || text === "Error :(") return calc.innerText = type;
 
